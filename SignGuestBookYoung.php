@@ -35,37 +35,28 @@
              *
              * Author: Brandon Young
              */
-            // Open database connection
-            $connect = mysqli_connect("localhost", "root", "rootpw");
 
-            echo "<p>MySQL client version: " . mysqli_get_client_info() . "</p>\n";
-
-            if($connect === false) {
-                echo "<p>Connection failed.</p>\n";
+            $DBName = "GuestBook";
+            // Check to see if information was entered into the Guest Book form
+            if(empty($_POST['first_name']) || empty($_POST['last_name'])) {
+                echo "<p>You must enter your first and last name! Click your browser's Back button to " .
+                        "return to the Guest Book form.</p>";
             } else {
-                echo "<p>MySQL connection: " . mysqli_get_host_info($connect) . "</p>\n";
-                echo "<p>MySQL Protocol Version: " . mysqli_get_proto_info($connect). "</p>\n";
-                echo "<p>MySQL Server Version: " . mysqli_get_server_info($connect) . "</p>\n";
-            } // end if else
-
-            $databaseName = "premiere";
-            $dbResult = @mysqli_select_db($databaseName, $connect);
-
-            if($dbResult === false) {
-                echo "<p>Unable to select the database.</p><p>Error code " . mysqli_errno($connect) . ": " . mysqli_error($connect) . "</p>";
-
-            } else {
-                echo "<p>Successfully opened the database.</p>";
-                $SQLstring = "SELECT CUSTOMER_NAME FROM CUSTOMER";
-                if(mysqli_num_rows(mysqli_query($connect, $SQLstring))) {
-                    for($i = 0; i < mysqli_num_rows(mysqli_query($connect, $SQLstring)); $i++) {
-                        echo mysqli_result($QUERYResult, $i);
-                    } // end foreach
-                } // end if
-            } // end if else
-
-            // close the database connection
-            mysqli_close($connect);
+                // Establish a connection to the MySQL Server
+                $DBConnect = @mysql_connect("localhost", "root", "");
+                if($DBConnect === false) {
+                    echo "<p>Unable to connect to the database server.</p>" .
+                        "<p>Error code " . mysqli_errno() . ": " . mysqli_error() . "</p>";
+                } else {
+                    if( !@mysql_select_db($DBName, $DBConnect) ) {
+                        $SQLstring = "CREATE DATABASE $DBName";
+                        $QueryResult = @mysql_query($SQLstring, $DBConnect);
+                        if($QueryResult === false) {
+                            echo "<p>Error Code " . mysql_errno($DBConnect)
+                        }
+                    }
+                }
+            }
         ?>
     </div>
 </div>
