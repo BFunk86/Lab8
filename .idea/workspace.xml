@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6c9b24d5-3c90-490f-aa64-bde08cc417dc" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SignGuestBookYoung.php" afterPath="$PROJECT_DIR$/SignGuestBookYoung.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -36,12 +37,12 @@
       <file leaf-file-name="SignGuestBookYoung.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/SignGuestBookYoung.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+            <state relative-caret-position="42">
+              <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
-                <element signature="e#1156#1227#0#PHP" expanded="true" />
-                <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-                <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+                <element signature="e#1102#1173#0#PHP" expanded="true" />
+                <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+                <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
               </folding>
             </state>
           </provider>
@@ -253,15 +254,16 @@
       <workItem from="1492578918234" duration="2808000" />
       <workItem from="1492633652804" duration="597000" />
       <workItem from="1492715940130" duration="5049000" />
-      <workItem from="1492741172980" duration="6196000" />
+      <workItem from="1492741172980" duration="6309000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19297000" />
+    <option name="totallyTimeSpent" value="19410000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.11292962" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2647504" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -271,7 +273,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18330605" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -317,9 +319,9 @@
         <state relative-caret-position="918">
           <caret line="54" column="74" lean-forward="false" selection-start-line="54" selection-start-column="74" selection-end-line="54" selection-end-column="74" />
           <folding>
-            <element signature="e#1156#1227#0#PHP" expanded="true" />
-            <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-            <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+            <element signature="e#1102#1173#0#PHP" expanded="true" />
+            <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+            <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
           </folding>
         </state>
       </provider>
@@ -337,9 +339,9 @@
         <state relative-caret-position="476">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#1156#1227#0#PHP" expanded="true" />
-            <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-            <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+            <element signature="e#1102#1173#0#PHP" expanded="true" />
+            <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+            <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
           </folding>
         </state>
       </provider>
@@ -365,9 +367,9 @@
         <state relative-caret-position="476">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#1156#1227#0#PHP" expanded="true" />
-            <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-            <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+            <element signature="e#1102#1173#0#PHP" expanded="true" />
+            <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+            <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
           </folding>
         </state>
       </provider>
@@ -401,9 +403,9 @@
         <state relative-caret-position="476">
           <caret line="28" column="16" lean-forward="false" selection-start-line="28" selection-start-column="16" selection-end-line="28" selection-end-column="16" />
           <folding>
-            <element signature="e#1156#1227#0#PHP" expanded="true" />
-            <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-            <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+            <element signature="e#1102#1173#0#PHP" expanded="true" />
+            <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+            <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
           </folding>
         </state>
       </provider>
@@ -441,12 +443,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/SignGuestBookYoung.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="68" column="58" lean-forward="true" selection-start-line="68" selection-start-column="58" selection-end-line="68" selection-end-column="58" />
+        <state relative-caret-position="42">
+          <caret line="27" column="4" lean-forward="false" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
           <folding>
-            <element signature="e#1156#1227#0#PHP" expanded="true" />
-            <marker date="1492749811459" expanded="true" signature="3021:3180" ph="CREATE TABLE... ${$TableName}" />
-            <marker date="1492749811459" expanded="true" signature="3718:3780" ph="INSERT INTO ${$TableName}... " />
+            <element signature="e#1102#1173#0#PHP" expanded="true" />
+            <marker date="1492753128129" expanded="true" signature="2967:3126" ph="CREATE TABLE... ${$TableName}" />
+            <marker date="1492753128129" expanded="true" signature="3664:3726" ph="INSERT INTO ${$TableName}... " />
           </folding>
         </state>
       </provider>

@@ -25,9 +25,7 @@
 </head>
 <body>
 <div class="container">
-    <div class="page-header">
-        <h1>Lab 8</h1>
-    </div>
+
     <div class="row">
         <?php
 
