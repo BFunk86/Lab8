@@ -12,7 +12,7 @@
        Filename: SignGuestBookYoung.php
     -->
     <meta charset="UTF-8">
-    <title>Guest Book</title>
+    <title>Sign Guest Book</title>
     <!-- Latest compiled and mninified JQuery for Bootstrap to work -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <!-- Latest compiled and minified CSS -->
