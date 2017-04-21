@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!--
+    <!--s
        CSC 2410 Web Programming
        Chapter 8 Lab
        Part 1: Sign Guest Book
@@ -88,7 +88,7 @@
                     $QueryResult = @mysql_query($SQLstring, $DBConnect);
                     // If the query doesn't work display an error
                     if($QueryResult === false) {
-                        echo "<p>Unable to create the table.</p>"
+                        echo "<p>Unable to execute the query.</p>"
                             . "<p>Error code " . mysql_errno($DBConnect)
                             . ": " . mysql_error($DBConnect) . "</p>";
                     } else {
