@@ -51,7 +51,7 @@
                     if( !@mysql_select_db($DBName, $DBConnect) ) {
                         $SQLstring = "CREATE DATABASE $DBName";
                         $QueryResult = @mysql_query($SQLstring, $DBConnect);
-                        // Output error if creating the table doesn't work
+                        // Output error if creating the database doesn't work
                         if($QueryResult === false) {
                             echo "<p>Unable to execute the query.</p>" .
                                 "<p>Error Code " . mysql_errno($DBConnect) . ": " . mysql_error($DBConnect) . "</p>";
@@ -70,9 +70,10 @@
                 $QueryResult = @mysql_query($SQLstring, $DBConnect);
                 // If the table does not exist this creates the visitors table
                 if(mysql_num_rows($QueryResult) == 0) {
+                    // This SQL Query creates an new visitors table
                     $SQLstring = "CREATE TABLE $TableName 
-                (countID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
-                last_name VARCHAR(40), first_name VARCHAR(40))";
+                      (countID SMALLINT NOT NULL AUTO_INCREMENT PRIMARY KEY, 
+                        last_name VARCHAR(40), first_name VARCHAR(40))";
                     $QueryResult = @mysql_query($SQLstring, $DBConnect);
                     // Display error message if creating the visitor table fails
                     if($QueryResult === false) {
@@ -80,23 +81,23 @@
                             . "<p>Error code " . mysql_errno($DBConnect)
                             . ": " . mysql_error($DBConnect) . "</p>";
                     } // end if
-                    // Collect the information that was submitted in the form
-                    $LastName = stripslashes($_POST['last_name']);
-                    $FirstName = stripslashes($_POST['first_name']);
-                    // This SQL Query will add the form information to the visitor table
-                    $SQLstring = "INSERT INTO $TableName VALUES(NULL, '$LastName', '$FirstName')";
-                    $QueryResult = @mysql_query($SQLstring, $DBConnect);
-                    // If the query doesn't work display an error
-                    if($QueryResult === false) {
-                        echo "<p>Unable to execute the query.</p>"
-                            . "<p>Error code " . mysql_errno($DBConnect)
-                            . ": " . mysql_error($DBConnect) . "</p>";
-                    } else {
-                        echo "<h1>Thank you for signing our guest book!</h1>";
-                    } // end if else
-                    // Close the connection to the database
-                    mysql_close($DBConnect);
                 } // end if
+                // Collect the information that was submitted in the form to add to visitors table
+                $LastName = stripslashes($_POST['last_name']);
+                $FirstName = stripslashes($_POST['first_name']);
+                // This SQL Query will add the form information to the visitor table
+                $SQLstring = "INSERT INTO $TableName VALUES(NULL, '$LastName', '$FirstName')";
+                $QueryResult = @mysql_query($SQLstring, $DBConnect);
+                // If the query doesn't work display an error
+                if($QueryResult === false) {
+                    echo "<p>Unable to execute the query.</p>"
+                        . "<p>Error code " . mysql_errno($DBConnect)
+                        . ": " . mysql_error($DBConnect) . "</p>";
+                } else {
+                    echo "<h1>Thank you for signing our guest book!</h1>";
+                } // end if else
+                // Close the connection to the database
+                mysql_close($DBConnect);
             } // end if else
         ?>
     </div><!-- .row -->

@@ -37,7 +37,7 @@
              * Author: Brandon Young
              */
 
-            // Try to connect to database
+            // Open a connection to database
             $DBConnect = @mysql_connect("localhost", "root", "");
             // If connection to database doesn't work display an error
             if($DBConnect === false) {
@@ -51,24 +51,24 @@
                 } else {
                     $TableName = "visitors";
                     // This query selects everything from the visitors table
-                    $SQLstring = "SHOW * FROM $TableName";
+                    $SQLstring = "SELECT * FROM $TableName";
                     $QueryResult = @mysql_query($SQLstring, $DBConnect);
                     // Output message if the visitors table is empty
                     if(mysql_num_rows($QueryResult) == 0) {
                         echo "<p>There are no entries in the guest book!</p>";
                     } else {
-                        echo "<p>The following visitors have signd our guest book:</p>";
+                        echo "<p>The following visitors have signed our guest book:</p>";
                         // This starts the beginning of a striped table
-                        echo "<table class='table table-striped'>";
+                        echo "<div class='col-xs-6'><table class='table table-striped'>";
                         // Add a head to the table
                         echo "<thead><tr><th>First Name</th><th>Last Name</th></tr></thead>";
                         echo "<tbody>";
                         // Loop through the query result and add each element to a new row in table
-                        while($Row = mysql_fetch_assoc($QueryResult) !== false) {
-                            echo "<tr><td>{$Row['first_name']}</td>";
-                            echo "<td>{$Row['last_name']}</td></tr>";
+                        while(($Row = mysql_fetch_assoc($QueryResult)) !== false) {
+                            echo "<tr><td>" . $Row['first_name'] . "</td>";
+                            echo "<td>" . $Row['last_name'] . "</td></tr>";
                         } // end while
-                        echo "</tbody>";
+                        echo "</tbody></table>";
                         // Clear the query result
                         mysql_free_result($QueryResult);
                     } // end if else
